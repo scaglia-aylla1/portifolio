@@ -1,93 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portifólio da Aylla Scaglia, Desenvolvedora Web Fullstack.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Aylla Scaglia, Desenvolvedora, Fullstack, Java, Spring Boot, APi Rest, React, Node.js, MySQL, PostgreSQL, Git, GitHub, Frontend, Backend">
     <meta name="author" content="Aylla Scaglia">
     <link rel="icon" href="assets/img/favicon.svg"/>
+
+    <!--  Link para a Folha de Estilos CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
     <title>Portifólio da Aylla Scaglia</title>
 </head>
-<body>
-    <!-- Cabeçalho da Página-->
-    <header>
-        <div id="header_content">
-           <div id="titulo">
-            <a href="#">Universo</a> 
-           </div>
 
-           <!--Menu-->
-           <div id="menu">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contatos</a></li>
-                </ul>
-            </nav>
-           </div>
+<body>
+
+    <!-- Cabeçalho da Página -->
+    <header class="flex menu_container">
+
+        <div id="header_content" class="menu_content">
+
+            <!-- Título do Cabeçalho -->
+            <div id="titulo">
+                <a href="#">Universo</a>
+            </div>
+
+            <!-- Menu -->
+            <div id="menu" class="flex">
+                <nav>
+                    <!-- Marcadores não Ordenados para criar as opções do menu -->
+                    <ul class="flex menu_list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </header>
 
-    <!-- Seção Principal -->
-     <main>
-        <section id="home">
-            <article id="home_texto">
-                <h4>Bem vindo ao Novo Universo</h4>
-                <h1>Mundos Diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto illo maiores ducimus molestiae modi. Molestiae odit quasi neque veritatis 
-                    minima minus reprehenderit quos! Architecto, consequatur repellendus. Quo sed veritatis consectetur.
-                </p>
-                <a href="https://github.com/scaglia-aylla1" target="_blank">Explorar</a>
+    <!-- Seção Principal da Página -->
+    <main>
+
+        <!-- Seção home -->
+        <section id="home" class="flex home_container">
+
+            <!-- Texto da Seção Home -->
+            <article id="home_texto" class="flex home_content">
+
+                <h4>Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum eum sapiente maiores adipisci
+                    aperiam sint dignissimos molestias voluptas expedita doloribus consequatur saepe maxime, tempore
+                    modi eligendi, eius, eos itaque.</p>
+                <a href="https://github.com/scaglia-aylla1" target="_blank" class="botao">
+                    Explorar
+                </a>
+
             </article>
-            <article id="home_imagem">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de astronauta com animação">
+
+            <!-- Imagem da Seção Home -->
+            <article id="home_imagem" class="flex home_content">
+                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
             </article>
+
         </section>
-        <!--Sessão Sobre-->
-        <section id="about">
-            <img src="./assets/img/user_01.svg" alt="Foto de perfil do Github">
 
-           <article id="about_texto">
-                <div>
-                    <h1>Sobre Mim</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non adipisci illum placeat recusandae, voluptatem quis dolor itaque, iusto vero assumenda
-                        totam. Voluptatem quibusdam illum veniam! Veritatis exercitationem soluta architecto dolore!
-                    </p>
-                </div>
+        <!-- Seção sobre -->
+        <section id="about" class="flex sobre_container">
 
-                <div id="about_github">
-                    <a href="https://github.com/Giovanalucia" target="_blank">Github</a>
-                    <p>50 seguidores</p>
+             <!-- Imagem da seção Sobre -->
+            <img src="./assets/img/user_01.svg" alt="Foto do perfil do Github" />
+
+            <!-- Texto da seção Sobre -->
+            <article id="about_texto">
+                <h1>Sobre mim</h1>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
+                    na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
+                    bebadis, arcu quam euismod magna.</p>
+
+                <div id="about_github" class="flex sobre_github">
+                    <a href="https://github.com/rafaelq80" target="_blank" class="botao">Github</a>
+                    <p>200 seguidores</p>
                     <p>20 repositórios</p>
                 </div>
-
-           </article>
+            </article>
 
         </section>
 
-       <section id="contact">
-            <h4>Contate-me</h4>
-            <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Leite de capivaris, leite de mula manquis sem cabeça.</p>
-            
-            <div id="icones_redes_sociais">
-                <a href="https://www.linkedin.com/in/aylla-scaglia/" target="_blank">
-                    <img src="./assets/img/linkedin.svg" alt="ícone do Linkedin"/>
-                </a>
+        <!-- Seção de Contato -->
+        <section id="contact" class="contato_container">
 
-                <a href="https://github.com/scaglia-aylla1" target="_blank">
-                    <img src="./assets/img/github.svg" alt="ícone do Github"/>
-                 </a>
+            <article id="redes_sociais" class="contato_content">
+                <h4>Contate-me</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis,
+                    deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam
+                    officia obcaecati perspiciatis.</p>
 
-                    <a href="https://www.instagram.com/aylla_scaglia/" target="_blank">
-                    <img src="./assets/img/instagram.svg" alt="ícone do instagram"/>
-                </a>
-            </div>
+                <!-- Redes Sociais -->
+                <div id="icones_redes_sociais" class="social_container">
+                    <a href="https://www.linkedin.com/in/aylla-scaglia/" target="_blank">
+                        <img src="./assets/img/linkedin.svg" alt="Logo do LinkedIn" class="social_icon">
+                    </a>
+                    <a href="https://github.com/scaglia-aylla1" target="_blank">
+                        <img src="./assets/img/github.svg" alt="Logo do Github" class="social_icon">
+                    </a>
+                    <a href="https:instagram.com/aylla_scaglia" target="_blank">
+                        <img src="./assets/img/instagram.svg" alt="Logo do Instagram" class="social_icon">
+                    </a>
+                </div>
+            </article>
 
-            <form action="" method="POST">
-               <label for="nome">Nome</label>
+            <!-- Formulário de Contato -->
+            <form action="" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="nome">Nome</label>
                 <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
 
@@ -103,16 +145,19 @@
                 <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
 
                 <button type="submit" class="botao">Enviar</button>
-            </form>
+            </form>
 
-     </main>
+        </section>
+
+    </main>
 
     <!-- Rodapé da Página -->
     <footer>
-        
-        Feito com 🧡  por Aylla Scaglia - 2025
-
+        Feito por Aylla Scaglia - 2025
     </footer>
-   
+
+    
+
 </body>
+
 </html>
