@@ -379,7 +379,8 @@ footer {
         width: 50%;
         margin-bottom: 1rem;
     }
-
+   
+   
        /* Ajustes Contato */
     .contato_container {
         grid-template-columns: 1fr;
