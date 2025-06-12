@@ -1,15 +1,17 @@
-/* ===== RESET E CONFIGURAÇÕES GLOBAIS ===== */
+/* RESETAR CONFIGURAÇÕES DO NAVEGAÇÃO */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none;
     font-weight: 400;
+    outline: none;
     font-family: 'Poppins', sans-serif;
 }
 
-/* ===== VARIÁVEIS DE CORES ===== */
+/* VARIÁVEIS DE CORES */
+
 :root {
     --purple-200: #9a7bd1;
     --purple-500: #6b36c8;
@@ -20,7 +22,6 @@
     --white: #F9F9F9;
 }
 
-/* ===== CONFIGURAÇÕES BÁSICAS ===== */
 html {
     width: 100%;
     height: 100vh;
@@ -34,21 +35,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* ===== ELEMENTOS INTERATIVOS ===== */
 button, a {
     cursor: pointer;
 }
 
-/* ===== COMPONENTES REUTILIZÁVEIS ===== */
 .botao {
     padding: 0.5rem 2rem;
     border: 1px solid var(--purple-800);
-    border-radius: 10px;
+    border-radius: 0.75rem;
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
     color: var(--purple-800);
-    background: none;
+    background-color: none;
 }
 
 .botao:hover {
@@ -57,15 +56,14 @@ button, a {
 }
 
 .flex {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ===== SEÇÕES PRINCIPAIS ===== */
-
 /* Header */
-.menu_container {
+
+.menu_container{
     position: sticky;
     top: 0;
     width: 100%;
@@ -76,14 +74,40 @@ button, a {
     z-index: 1000;
 }
 
-.menu_content {
-    display: flex;
+.menu_container a{
+    font-weight: 700;
+    color: var(--white);
+}
+
+.menu_container a:hover{
+    color: var(--purple-200);
+}
+
+.menu_content{
+    display:flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
     max-width: 1120px;
     padding: 0 1.5rem;
-    height: 100%;
+}
+
+.menu_list{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_list li{
+    margin-left: 1rem;
+}
+
+.menu_list a{
+    display: block;
+    padding: 0.5rem;
 }
 
 #menu_content_sucess {
@@ -100,34 +124,9 @@ button, a {
     font-weight: 700;
 }
 
-.menu_container a {
-    font-weight: 700;
-    color: var(--white);
-}
-
-.menu_container a:hover {
-    color: var(--purple-200);
-}
-
-.menu_list {
-    display: flex;
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu_list li {
-    margin-left: 1rem;
-}
-
-.menu_list a {
-    display: block;
-    padding: 0.5rem;
-}
-
 /* Home */
-.home_container {
+
+.home_container{
     height: calc(100vh - 6.25rem);
     max-width: 1120px;
     margin: 1rem auto;
@@ -136,37 +135,169 @@ button, a {
 
 .home_container p,
 h1,
-h4 {
-    font-size: 1rem;
+h4{
     text-align: center;
 }
 
-.home_container h1 {
+.home_container h1{
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 3rem;
 }
 
-.home_container h4 {
+.home_container h4{
     font-weight: 700;
 }
 
-.home_container p {
+.home_container p{
     margin: 1rem 0;
 }
 
-.home_container .botao {
+.home_container .botao{
     width: 40%;
 }
 
-.home_content {
+.home_content{
     flex-direction: column;
     width: 50vw;
 }
 
-.home_content img {
+.home_content img{
     width: 75%;
 }
+
+/* Sobre */
+.sobre_container {
+    max-width: 1120px;
+    margin: -1.25rem auto;
+    padding: 0 1rem;
+    height: 100vh;
+}
+
+.sobre_container img {
+    width: 30%;
+    margin: 1rem;
+    border: 5px solid var(--purple-500);
+    border-radius: 50%;
+}
+
+.sobre_container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.sobre_container p {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.sobre_github {
+    justify-content: space-evenly;
+}
+
+#sobre_texto {
+    margin-left: 2rem;
+}
+
+/* Contato */
+
+.contato_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    max-width: 1120px;
+    margin: 4rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.contato_container h4{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contato_content{
+    flex-direction: column;
+    margin: 4rem 0 0 0;
+    font-size: 1.25rem;
+}
+
+.contato_content p{
+    display: block;
+    text-align: justify;
+}
+
+.social_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+}
+
+.social_icon{
+    width: 4.75rem;
+    height: 4.75rem;
+}
+
+.social_icon:hover{
+    filter: brightness(0)
+            saturate(100%)
+            invert(20%)
+            sepia(24%)
+            saturate(4557%)
+            hue-rotate(242deg)
+            brightness(89%)
+            contrast(108%)
+}
+
+/* Formulário */
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    padding: 1.25rem;
+}
+
+form label{
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea{
+    resize: none;
+}
+
+form span{
+    margin-bottom: 0.5rem;
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: red;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+    padding: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--purple-500);
+    filter: opacity(0.9);
+}
+
 
 /* Home - Página Sucess */
 .home_container_sucess {
@@ -226,262 +357,71 @@ h4 {
     margin-left: 2rem;
 }
 
-/* Contato */
-.contato_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
-    max-width: 1120px;
-    margin: 4rem auto 2rem;
-    padding: 0 2rem;
-}
+/* Responsividade Mobile */
 
-.contato_container h4 {
-    margin: 1rem 0;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.contato_content {
-    flex-direction: column;
-    margin: 4rem 0 0 0;
-    font-size: 1.25rem;
-}
-
-.contato_content p {
-    display: block;
-    text-align: justify;
-}
-
-/* Redes Sociais */
-.social_container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2rem 0 0 0;
-}
-
-.social_icon {
-    width: 4.75rem;
-    height: 4.75rem;
-}
-
-.social_icon:hover {
-    filter: brightness(0) 
-            saturate(100%) 
-            invert(20%) 
-            sepia(24%) 
-            saturate(4557%) 
-            hue-rotate(242deg) 
-            brightness(89%) 
-            contrast(108%);
-}
-
-/* Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    margin: 7rem 0 0 0;
-    padding: 1.25rem;
-}
-
-form label {
-    font-size: 1.25rem;
-    text-align: left;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    margin: 0.5rem 0 1rem;
-    padding: 0.5rem;
-    border-radius: 20px;
-    border: none;
-    font-size: 1rem;
-}
-
-textarea {
-    resize: none;
-}
-
-form span {
-    margin-bottom: 0.5rem;
-    margin-left: 0.75rem;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    color: red;
-}
-
-/* Footer */
-footer {
-    margin: 0;
-    padding: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--white);
-    background-color: var(--purple-500);
-    filter: opacity(0.9);
-}
-
-/* ===== RESPONSIVIDADE ===== */
-
-/* Configurações comuns para dispositivos móveis */
-@media screen and (max-width: 960px) {
-    body {
+@media screen and (max-width: 960px){
+    body{
         display: flex;
         flex-direction: column;
         min-height: 100vh;
     }
 
-    main {
+    main{
         flex: 1;
-        display: flex;
         flex-direction: column;
     }
 
-    footer {
+    footer{
         margin-top: auto;
     }
 
-    /* Ajustes Home */
-    .home_container {
+    .home_container{
         flex-direction: column-reverse;
         gap: 0;
         height: auto;
         margin-top: 0;
-        padding: 16px;
+        padding: 1rem;
     }
 
-    .home_content {
+    .home_content{
         width: 100%;
         margin: 0;
     }
 
-    .home_content .botao {
+    .home_content .botao{
         width: 60%;
         margin-top: 1rem;
     }
 
-    /* Ajustes Sobre */
-    .sobre_container {
+    .sobre_container{
         flex-direction: column;
         height: auto;
         margin: 1rem auto;
         padding: 2rem 1rem;
     }
-    .sobre_container h1{
-        font-size: 2rem;
-        color: var(--purple-800);
-        margin-bottom: 1rem;
-        text-align: left;
-    }
 
-    .sobre_container img {
+    .sobre_container img{
         width: 50%;
         margin-bottom: 1rem;
     }
-   
-   
-       /* Ajustes Contato */
-    .contato_container {
+
+    .contato_container{
         grid-template-columns: 1fr;
         gap: 1rem;
         margin: 1rem auto;
         padding: 0 1rem;
     }
 
-    .contato_content {
+    .contato_content{
         margin: 1rem 0 0 0;
     }
 
-    .social_container {
+    .social_container{
         margin: 1.5rem 0 0 0;
     }
 
-    form {
+    form{
         margin: 1.5rem 0 0 0;
         padding: 1rem;
-    }
-}
-
-/* Ajustes específicos para smartphones */
-@media screen and (max-width: 490px) {
-    /* Menu */
-    .menu_container {
-        height: auto;
-        padding: 0.5rem 0;
-    }
-
-    .menu_content {
-        justify-content: center;
-        max-width: 100%;
-    }
-
-    .menu_list {
-        display: none;
-    }
-
-    /* Home */
-    .home_container {
-        margin-top: 0.5rem;
-        padding: 0.5rem;
-    }
-
-    .home_content h1 {
-        font-size: 1.75rem;
-        line-height: 2.25rem;
-    }
-
-    .home_content .botao, 
-    .home_content img {
-        width: 80%;
-    }
-
-    /* Sobre */
-    .sobre_container {
-        margin: 0.5rem auto;
-        padding: 1rem;
-    }
-
-    .sobre_container img {
-        width: 70%;
-        margin: 0.5rem;
-    }
-
-    .sobre_github {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .sobre_github p {
-        display: none;
-    }
-
-    /* Contato */
-    .contato_container {
-        margin: 0.5rem auto;
-        padding: 0.5rem;
-    }
-
-    .contato_content {
-        margin: 0.5rem 0 0 0;
-    }
-
-    .contato_content h4 {
-        font-size: 1.75rem;
-        line-height: 2.25rem;
-    }
-
-    .social_container {
-        margin: 1rem 0 0 0;
-    }
-
-    .social_icon {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    form {
-        margin: 1rem 0 0 0;
-        padding: 0.5rem;
     }
 }
