@@ -4,6 +4,7 @@ const formulario =  document.querySelector("#formulario")
 
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
+
 async function getApiGithub() {
     try {
         
@@ -83,7 +84,6 @@ formulario.addEventListener("submit", function(event){
     // Enviar o e-mail
     formulario.submit()
 })
-
 
 getApiGithub()
 
