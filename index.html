@@ -10,8 +10,8 @@
     <!-- Fonte do Google - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    
     <meta charset="UTF-8">
-   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portifólio da Aylla Scaglia, Desenvolvedora Web Fullstack.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Aylla Scaglia, Desenvolvedora, Fullstack, Java, Spring Boot, APi Rest, React, Node.js, MySQL, PostgreSQL, Git, GitHub, Frontend, Backend">
@@ -20,6 +20,9 @@
 
     <!--  Link para a Folha de Estilos CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
     <title>Portifólio da Aylla Scaglia</title>
 </head>
@@ -33,7 +36,7 @@
 
             <!-- Título do Cabeçalho -->
             <div id="titulo">
-                <a href="#">Universo</a>
+                <a href="#">Aylla Scaglia</a>
             </div>
 
             <!-- Menu -->
@@ -60,11 +63,10 @@
             <!-- Texto da Seção Home -->
             <article id="home_texto" class="flex home_content">
 
-                <h4>Bem-vindo ao Novo Universo</h4>
-                <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum eum sapiente maiores adipisci
-                    aperiam sint dignissimos molestias voluptas expedita doloribus consequatur saepe maxime, tempore
-                    modi eligendi, eius, eos itaque.</p>
+                <h4>Olá, eu sou a Aylla!</h4>
+                <h1>Desenvolvedora apaixonada por tecnologia e inovação!!</h1>
+                <p>Especializando-se em desenvolvimento fullstack, com foco na construção de 
+                    APIs Rest, backends robustos, landing pages e soluções inovadoras.</p>
                 <a href="https://github.com/scaglia-aylla1" target="_blank" class="botao">
                     Explorar
                 </a>
@@ -73,24 +75,163 @@
 
             <!-- Imagem da Seção Home -->
             <article id="home_imagem" class="flex home_content">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
+                <img src="./assets/img/cartoon.png" alt="Capacete de Astronauta Animado">
             </article>
 
         </section>
 
         <!-- Seção sobre -->
         <section id="about" class="flex sobre_container">
-
+            <img src="./assets/img/aylla2.jpeg" alt="Foto de Aylla">
         </section>
+        <section class="section skills-section" id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                <h4>HTML</h4>
+                </div>
+                <div class="skill-item">
+                <h4>CSS</h4>
+                </div>
+                <div class="skill-item">
+                <h4>JavaScript</h4>
+                </div>
+                <div class="skill-item">
+                <h4>Java</h4>
+                </div>
+                <div class="skill-item">
+                <h4>Spring Boot</h4>
+                </div>
+                <div class="skill-item">
+                <h4>SQL</h4>
+                </div>
+                <div class="skill-item">
+                <h4>NoSQL</h4>
+                </div>
+                <div class="skill-item">
+                <h4>APIs REST</h4>
+                </div>
+                <div class="skill-item">
+                <h4>Git</h4>
+                </div>
+                <div class="skill-item">
+                <h4>Bootstrap</h4>
+                </div>
+                <div class="skill-item">
+                <h4>React</h4>
+                </div>
+                <div class="skill-item">
+                <h4>Typescript</h4>
+                </div>
+                <!-- Adicione outras habilidades conforme quiser -->
+            </div>
+  </section>
+  
+  <!-- Projetos -->
+ <section id="projetos">
+        <div class="projetos-container">
+            <h2>Projetos</h2>
+            <div class="card-projeto">
+            <!-- <img src="img/sistema-financeiro.png" alt="Sistema Financeiro"> -->
+            <div class="card-conteudo">
+                <h5>Blog Pessoal</h5>
+                <p>Web app com Spring Boot, JPA, MySQL</p>
+                <div class="tech-tags">
+                <span class="badge">Java</span>
+                <span class="badge">Spring Boot</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">JPA</span>
+                </div>
+                <div class="botoes">
+                <a href="https://github.com/scaglia-aylla1/blogpessoal" target="_blank" class="btn-repo">
+                    <i class="bi bi-github"></i> Repositório
+                </a>
+                <a href="https://blogpessoal-vrqx.onrender.com" target="_blank" class="btn-demo">
+                    Ver Demo
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+       <!-- Card Projeto 2 -->
+      <div class="projetos-container">
+        <div class="card-projeto">
+          <!-- <img src="img/sistema-financeiro.png" alt="Sistema Financeiro"> -->
+          <div class="card-conteudo">
+            <h5>Sistema de Integração de APIs</h5>
+            <p>Applição para consumir APIs</p>
+            <div class="tech-tags">
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">Swagger</span>
+              <span class="badge">JUnit 5 </span>
+            </div>
+            <div class="botoes">
+             <a href="https://github.com/scaglia-aylla1/apiintegrationsystem" class="btn-repo" target="_blank">
+                <i class="bi bi-github me-1"></i> Repositório
+             </a>
+              <!-- <a href="https://seu-deploy.vercel.app" class="btn-demo" target="_blank">Ver Demo</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card Projeto 3 -->
+      <div class="projetos-container">
+        <div class="card-projeto">
+          <!-- <img src="img/sistema-financeiro.png"  alt="Sistema Financeiro"> -->
+          <div class="card-conteudo">
+            <h5>Fisio-Care</h5>
+            <p>App para acompanhamento de rotinas de Fisioterapia</p>
+            <div class="tech-tags">
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">Postgres</span>
+              <span class="badge">JPA</span>
+              <span class="badge">Security</span>
+              <span class="badge">Trabalho em Equipe</span>
+            </div>
+            <div class="botoes">
+             <a href="https://github.com/Projetos-Grupo-01/fisiocare" class="btn-repo" target="_blank">
+                <i class="bi bi-github me-1"></i> Repositório
+             </a>
+             <a href="https://fisiocare.onrender.com/" class="btn-demo" target="_blank">Ver Demo</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card Projeto 4 -->
+      <div class="projetos-container">
+        <div class="card-projeto">
+          <!-- <img src="img/sistema-financeiro.png"  alt="Sistema Financeiro"> -->
+          <div class="card-conteudo">
+            <h5>Sistema de Controle Financeiro</h5>
+            <p>App com Spring Boot, JPA, MySQL.</p>
+            <div class="tech-tags">
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">JPA</span>
+            </div>
+            <div class="botoes">
+             <a href="https://github.com/scaglia-aylla1/sistema-financeiro" class="btn-repo" target="_blank">
+                <i class="bi bi-github me-1"></i> Repositório
+             </a>
+              <!-- <a href="https://seu-deploy.vercel.app" class="btn-demo" target="_blank">Ver Demo</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <!-- Seção de Contato -->
         <section id="contact" class="contato_container">
 
             <article id="redes_sociais" class="contato_content">
                 <h4>Contate-me</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis,
-                    deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam
-                    officia obcaecati perspiciatis.</p>
+                <p>Caso tenha alguma dúvida, entre em contato!</p>
 
                 <!-- Redes Sociais -->
                 <div id="icones_redes_sociais" class="social_container">
@@ -138,9 +279,10 @@
     <footer>
         Feito por Aylla Scaglia - 2025
     </footer>
-
+    
     <!-- Script para informações do GitHub-->
     <script src="./assets/js/script.js"></script>
+    
  
 
 </body>

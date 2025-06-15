@@ -16,14 +16,17 @@ async function getApiGithub() {
         //Criando o conteúdo da sessão about
         let conteudo = ` 
                 <!-- Imagem da seção Sobre -->
-                <img src="${perfil.avatar_url}" alt="Foto do perfil do Github - ${perfil.name}" />
 
                 <!-- Texto da seção Sobre -->
                 <article id="about_texto">
                     <h1>Sobre mim</h1>
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
-                        na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
-                        bebadis, arcu quam euismod magna.</p>
+                    <p>
+                        Sou uma desenvolvedora em transição de carreira, apaixonada por tecnologia e movida por desafios. Após anos de experiência como líder de equipe no setor de costura, decidi seguir meu coração e mergulhar no universo da programação.  
+                        <br><br>
+                        Atualmente, estou focada em desenvolvimento web, com ênfase em Java, Spring Boot, HTML, CSS e Bootstrap. Tenho explorado tecnologias de back-end e front-end, buscando me tornar uma desenvolvedora full stack.
+                        <br><br>
+                        Estudar, codar e criar soluções que impactem positivamente a vida das pessoas é o que me motiva todos os dias. Estou sempre em busca de aprendizado contínuo, evolução e novas oportunidades para crescer na área de tecnologia.
+                    </p>
 
                     <div id="about_github" class="flex sobre_github">
                         <a href="h${perfil.html_url}" target="_blank" class="botao">Github</a>
