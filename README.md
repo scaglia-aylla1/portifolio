@@ -44,7 +44,7 @@ Você pode visualizar o portfólio abrindo o arquivo `index.html` em seu navegad
 
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
 
-- [Portfólio Pessoal](https://scaglia-aylla1.github.io/portifolio2/)
+- [Portfólio Pessoal](https://scaglia-aylla1.github.io/portifolio/)
 
 ## 🙋‍♀️ Sobre Mim
 
